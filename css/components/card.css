@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  width: 60%;
+  margin: 30px auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  border-top: 1px solid rgb(8, 27, 48);
+}
+
+.journey, .mountain, .compass {
+  text-align: center;
+  background-color: white;
+  color: rgb(8, 27, 48);
+  border: 1px solid rgb(8, 27, 48);
+  padding: 3%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  transition: 0.3s;
+}
+
+.journey h3, .mountain h2, .compass h3 {
+  font-weight: 100;
+}
+
+.journey:hover, .mountain:hover, .compass:hover {
+  background-color: rgb(8, 27, 48);
+  color: white;
+}
+
+.journey:hover a, .mountain:hover a, .compass:hover a {
+  color: white;
+}
+
+.journey, .compass {
+  width: 20%;
+}
+
+.journey i, .compass i {
+  font-size: 2em;
+}
+
+.mountain {
+  width: 30%;
+}
+
+.mountain i {
+  font-size: 4em;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 80%;
+  }
+  .journey i, .compass i {
+    font-size: 1em;
+  }
+  .mountain i {
+    font-size: 2em;
+  }
+}
